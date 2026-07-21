@@ -23,17 +23,19 @@
             android:id="@+id/subtitleText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#212121"
             android:textSize="18sp"
-            android:textColor="#666666"
             android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/contentText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textColor="#212121"
             android:lineSpacingExtra="6dp"
+            android:textSize="16sp"
             android:layout_marginTop="24dp"/>
+
 
     </LinearLayout>
 
