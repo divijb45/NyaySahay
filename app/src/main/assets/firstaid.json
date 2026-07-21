@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Pepper Spray / Tear Gas",
+    "subtitle": "Immediate Response",
+    "content": "Move away from the affected area. Do not rub your eyes. Flush eyes with plenty of clean water or saline if available. Remove contaminated clothing once safe. Seek medical attention if symptoms persist."
+  },
+  {
+    "title": "Bleeding",
+    "subtitle": "Control Blood Loss",
+    "content": "Apply firm, direct pressure with a clean cloth or bandage. Elevate the injured area if possible. Call emergency services if bleeding is severe or cannot be controlled."
+  },
+  {
+    "title": "Head Injury",
+    "subtitle": "Possible Concussion",
+    "content": "If the person loses consciousness, vomits repeatedly, has seizures, severe headache, confusion, or unequal pupils, seek emergency medical care immediately."
+  },
+  {
+    "title": "Fractures",
+    "subtitle": "Broken Bones",
+    "content": "Do not try to straighten the limb. Immobilize it in the position found. Apply ice wrapped in cloth if available and seek medical care."
+  },
+  {
+    "title": "Heat Exhaustion",
+    "subtitle": "High Temperatures",
+    "content": "Move to shade, loosen clothing, drink water slowly, and cool the body with wet cloths. If confusion or unconsciousness develops, call emergency services."
+  },
+  {
+    "title": "CPR",
+    "subtitle": "Cardiac Emergency",
+    "content": "If someone is unresponsive and not breathing normally, call emergency services immediately. Begin chest compressions if trained."
+  }
+]

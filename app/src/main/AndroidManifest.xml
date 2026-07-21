@@ -13,10 +13,13 @@
         android:theme="@style/Theme.ProtestResources"
         tools:targetApi="31">
         <activity
-            android:name=".ArticleDetailActivity"
+            android:name=".LawyerDirectoryActivity"
             android:exported="false" />
         <activity
-            android:name=".model.ArticleDetailActivity"
+            android:name=".StateSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ArticleListActivity"
