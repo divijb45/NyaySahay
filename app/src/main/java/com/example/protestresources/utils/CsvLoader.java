@@ -26,9 +26,16 @@ public class CsvLoader {
                     new BufferedReader(new InputStreamReader(inputStream));
 
             // Skip header row
-            reader.readLine();
-
             String line;
+
+// Skip everything until we find the real CSV header
+            while ((line = reader.readLine()) != null) {
+
+                if (line.toLowerCase().startsWith("name")) {
+                    break;
+                }
+
+            }
 
             while ((line = reader.readLine()) != null) {
 

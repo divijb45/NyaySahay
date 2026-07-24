@@ -1,133 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="#F4F6F8"
     android:fillViewport="true">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Title -->
+        <!-- HEADER CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NyaySahay - Legal Aid &amp; Protest Resources"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Offline access to legal information, advocate directories, emergency contacts and first-aid guidance."
+                android:textSize="16sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="✓ Works entirely offline&#10;✓ Constitutional rights&#10;✓ Advocate &amp; volunteer directories&#10;✓ Emergency contacts &amp; first aid&#10;✓ One-tap SOS access"
+                android:textSize="15sp"
+                android:textColor="#444444"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Version 2.0 • Updated July 2026"
+                android:textColor="#888888"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+
+        <!-- RESOURCES -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Legal Aid &amp; Protest Resources"
+            android:text="Resources"
             android:textStyle="bold"
-            android:textSize="32sp"
-            android:textColor="#111111"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="✓ Works entirely offline&#10;✓ Know your rights&#10;✓ Find legal aid quickly&#10;✓ Stay informed and stay safe"
-            android:textSize="16sp"/>
+            android:textSize="20sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="14dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Last Updated: July 2026"
-            android:textColor="#888888"
-            android:textSize="13sp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="24dp"/>
-
-        <!-- Know Your Rights -->
 
         <Button
             android:id="@+id/rightsButton"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="78dp"
             android:text="📖  Know Your Rights"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1565C0"
             android:layout_marginBottom="12dp"/>
 
-        <!-- Emergency -->
-
-        <Button
-            android:id="@+id/emergencyButton"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:text="☎  Emergency Contacts"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:layout_marginBottom="12dp"/>
-
-        <!-- Legal -->
 
         <Button
             android:id="@+id/legalButton"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="78dp"
             android:text="⚖  Legal Aid Directory"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2E7D32"
+            android:layout_marginBottom="12dp"/>
+
+
+        <Button
+            android:id="@+id/volunteerButton"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="🤝  Legal Volunteers"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#00897B"
+            android:layout_marginBottom="12dp"/>
+        <Button
+            android:id="@+id/medicalButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="🩺 Medical Volunteers"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:layout_marginBottom="12dp"/>
 
-        <!-- First Aid -->
+
+        <Button
+            android:id="@+id/emergencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="☎  Emergency Contacts"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginBottom="12dp"/>
+
 
         <Button
             android:id="@+id/firstAidButton"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="78dp"
             android:text="🩹  First Aid"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#EF6C00"
             android:layout_marginBottom="12dp"/>
 
-        <!-- Checklist -->
 
         <Button
             android:id="@+id/checklistButton"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="78dp"
             android:text="✅  Protest Checklist"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            android:layout_marginBottom="28dp"/>
-
-        <!-- SOS -->
-
-        <Button
-            android:id="@+id/sosButton"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="12dp"
-            android:text="🚨 EMERGENCY SOS (112)"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="19sp"
             android:textColor="@android:color/white"
-            android:backgroundTint="#D32F2F"/>
+            android:backgroundTint="#455A64"
+            android:layout_marginBottom="22dp"/>
+
+
+        <!-- SOS CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEBEE"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/sosButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="🚨 EMERGENCY SOS (112)"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#C62828"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Opens your phone dialer with India's national emergency number (112)."
+                android:textColor="#555555"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <!-- FOOTER -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="18dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Opens your phone dialer with 112 pre-filled."
+            android:text="Legal Aid &amp; Protest Resources • Version 2.0"
             android:textAlignment="center"
-            android:textColor="#777777"
-            android:textSize="13sp"
-            android:layout_marginTop="10dp"/>
-
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This app provides general legal and safety information only. Verify details with qualified legal professionals where possible."
+            android:text="This application provides general legal and safety information. It should not be considered legal advice. Please verify information with qualified legal professionals where possible."
             android:textAlignment="center"
             android:textColor="#999999"
             android:textSize="12sp"
-            android:layout_marginTop="28dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"/>
 
     </LinearLayout>
 

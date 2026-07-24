@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F4F6F8"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,30 +13,60 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:id="@+id/titleText"
+        <!-- Article Card -->
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="28sp"
-            android:textStyle="bold"/>
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="20dp">
 
-        <TextView
-            android:id="@+id/subtitleText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#212121"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
 
-        <TextView
-            android:id="@+id/contentText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#212121"
-            android:lineSpacingExtra="6dp"
-            android:textSize="16sp"
-            android:layout_marginTop="24dp"/>
+            <View
+                android:layout_width="48dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="10dp"
+                android:background="#1565C0"/>
 
+            <TextView
+                android:id="@+id/subtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Subtitle"
+                android:textColor="#666666"
+                android:textStyle="italic"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="18dp"
+                android:background="#E0E0E0"/>
+
+            <TextView
+                android:id="@+id/contentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:lineSpacingExtra="10dp"
+                android:lineSpacingMultiplier="1.15"
+                android:textIsSelectable="true"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

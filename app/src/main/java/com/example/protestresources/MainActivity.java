@@ -22,8 +22,11 @@ public class MainActivity extends AppCompatActivity {
     Button emergencyButton;
     Button legalButton;
     Button firstAidButton;
+    Button volunteerButton;
     Button checklistButton;
     Button sosButton;
+    Button medicalButton;
+
 
     private void openSection(String title, String jsonFile) {
 
@@ -48,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         legalButton = findViewById(R.id.legalButton);
         firstAidButton = findViewById(R.id.firstAidButton);
         checklistButton = findViewById(R.id.checklistButton);
+        volunteerButton = findViewById(R.id.volunteerButton);
+        medicalButton = findViewById(R.id.medicalButton);
         sosButton = findViewById(R.id.sosButton);
         rightsButton.setOnClickListener(v ->
                 openSection("Know Your Rights", "rights.json"));
@@ -64,6 +69,24 @@ public class MainActivity extends AppCompatActivity {
             Intent intent =
                     new Intent(MainActivity.this,
                             StateSelectionActivity.class);
+
+            startActivity(intent);
+
+        });
+        volunteerButton.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(MainActivity.this,
+                            VolunteerDirectoryActivity.class);
+
+            startActivity(intent);
+
+        });
+        medicalButton.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(MainActivity.this,
+                            MedicalVolunteerActivity.class);
 
             startActivity(intent);
 
