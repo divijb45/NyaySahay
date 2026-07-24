@@ -80,18 +80,34 @@ public class MedicalVolunteerActivity extends AppCompatActivity {
 
         LinearLayout card = new LinearLayout(this);
         card.setOrientation(LinearLayout.VERTICAL);
-        card.setPadding(24,24,24,24);
+        card.setPadding(32, 32, 32, 32);
+
+        LinearLayout.LayoutParams params =
+                new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT);
+
+        params.setMargins(0, 0, 0, 24);
+
+        card.setLayoutParams(params);
+
+        card.setBackgroundColor(android.graphics.Color.WHITE);
 
         TextView title = new TextView(this);
         title.setText(name);
         title.setTextSize(18);
         title.setTypeface(null, android.graphics.Typeface.BOLD);
+        title.setTextColor(android.graphics.Color.parseColor("#212121"));
 
         TextView subtitle = new TextView(this);
         subtitle.setText(service);
+        subtitle.setTextColor(android.graphics.Color.parseColor("#616161"));
+        subtitle.setTextSize(15);
 
         TextView city = new TextView(this);
         city.setText("📍 " + location);
+        city.setTextColor(android.graphics.Color.parseColor("#757575"));
+        city.setTextSize(14);
 
         Button call = new Button(this);
         call.setText("📞 Call " + phone);
@@ -106,7 +122,11 @@ public class MedicalVolunteerActivity extends AppCompatActivity {
         });
 
         card.addView(title);
-        card.addView(subtitle);
+
+        if (!service.isEmpty()) {
+            card.addView(subtitle);
+        }
+
         card.addView(city);
         card.addView(call);
 

@@ -31,5 +31,4 @@ public class ArticleDetailActivity extends AppCompatActivity {
         content.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
-
 }
